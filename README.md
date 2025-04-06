@@ -11,6 +11,19 @@
 ```
     podman compose up -d
 ```
+* Chạy TiDB:
+```
+    podman compose --file docker-compose.tidb.yml up -d --force-recreate
+    
+```
+* Tạo data cho tidb:
+```
+   tiup demo bookshop prepare -U root -H localhost -P 4000 
+```
+* Chạy Mysql:
+```
+    odman compose --file docker-compose.mysql.yml up -d --force-recreate
+```
 * Chạy application bằng spark-submit
 ```
     podman exec -it spark-master bash 

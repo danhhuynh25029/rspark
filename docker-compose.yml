@@ -40,6 +40,6 @@ services:
     volumes:
       - ./conf/spark-defaults.conf:/opt/bitnami/spark/conf/spark-defaults.conf
       - ./spark-logs:/opt/bitnami/spark/spark-events
-      - ./warehouse:/opt/bitnami/spark/warehouse
+  #      - ./warehouse:/opt/bitnami/spark/warehouse
     ports:
       - "18080:18080"
